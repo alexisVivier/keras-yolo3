@@ -14,11 +14,12 @@ from yolo3.utils import get_random_data
 
 
 def _main():
-    annotation_path = 'train.txt'
+    annotation_path = 'demofile3.txt'
     log_dir = 'logs/000/'
     classes_path = 'model_data/voc_classes.txt'
     anchors_path = 'model_data/yolo_anchors.txt'
-    class_names = get_classes(classes_path)
+    # class_names = get_classes(classes_path)
+    class_names = ["person"]
     num_classes = len(class_names)
     anchors = get_anchors(anchors_path)
 
